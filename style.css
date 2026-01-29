@@ -14,13 +14,14 @@ body {
 /* Title text */
 .title {
   position: absolute;
-  top: 40%;
-  left: 45%;
-  transform: rotate(-15deg) translate(-50%, -50%);
-  font-size: 5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-12deg);
+  font-size: clamp(3rem, 10vw, 6rem);
   font-weight: 900;
   color: black;
   line-height: 0.9;
+  text-align: center;
 }
 
 /* Blobs */
@@ -32,28 +33,32 @@ body {
 
 /* Left big blob */
 .blob-left {
-  width: 500px;
-  height: 500px;
+  width: 60vw;
+  height: 60vw;
+  max-width: 500px;
+  max-height: 500px;
   background: linear-gradient(135deg, #7ef0c5, #9aa8ff);
-  top: -150px;
-  left: -150px;
+  top: -20vw;
+  left: -20vw;
 }
 
-/* Right blob */
 .blob-right {
-  width: 350px;
-  height: 350px;
+  width: 45vw;
+  height: 45vw;
+  max-width: 350px;
+  max-height: 350px;
   background: linear-gradient(135deg, #7b8cff, #ff7aa2);
-  top: -100px;
-  right: -100px;
+  top: -15vw;
+  right: -15vw;
 }
 
-/* Bottom angled blob */
 .blob-bottom {
-  width: 400px;
-  height: 400px;
+  width: 55vw;
+  height: 55vw;
+  max-width: 400px;
+  max-height: 400px;
   background: linear-gradient(135deg, #ffd27d, #ff9bd5);
-  bottom: -200px;
-  left: 100px;
+  bottom: -25vw;
+  left: 10vw;
   transform: rotate(20deg);
 }
